@@ -1,12 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/src/output.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link href="./css/src/output.css" rel="stylesheet" />
     <title>Currency Converter</title>
-</head>
-<body>
-    <h1 class="text-3xl underline text-green-500 font-bold">hello there</h1>
-</body>
+  </head>
+  <body>
+    <div class="container mx-auto p-10 relative">
+      <div class="wrapper md:w-[40%] mx-auto bg-background-wrapper">
+        <div class="bg-background-content rounded-4xl p-4">
+          <div class="header justift-items-between">
+            <span class="icon-container justift-items-center border-gray-500">
+              <i class="fa-solid fa-chevron-left"></i>
+            </span>
+            <div class="wallet justift-items-center gap-3">
+              <span class="justift-items-center p-2 bg-white rounded-full">
+                <i class="fa-solid fa-wallet"></i>
+              </span>
+              <div class="justift-items-center gap-1 cursor-pointer">
+                <p>0x760....35ced</p>
+                <span><i class="fa-solid fa-chevron-down"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="time-container pt-10 mb-6">
+            <h3 class="font-light text-gray-500">Last uppdate :</h3>
+            <div
+              class="current-date text-2xl font-semibold"
+              id="currentDateContainer"
+            ></div>
+            <div
+              class="current-time text-2xl font-semibold"
+              id="currentTimeContainer"
+            ></div>
+          </div>
+          <div class="content">
+            <div class="contetnt-exchange relative">
+              <div class="you-pay bg-background-light rounded-4xl py-3 px-5">
+                <p class="">You pay</p>
+                <div class="justift-items-between my-5">
+                  <div class="justift-items-center gap-2">
+                    <span
+                      class="icon-container justift-items-center bg-[#ccf1ef] border-none"
+                      ><i class="fa-solid fa-money-bill-transfer"></i
+                    ></span>
+                    <select name="from" id="from" class="font-medium focus:outline-none">
+                      <option value="volvo">Volvo</option>
+                      <option value="saab">Saab</option>
+                      <option value="mercedes">Mercedes</option>
+                      <option value="audi">Audi</option>
+                    </select>
+                  </div>
+                  <div class="justift-items-center">
+                    <input type="number" class="p-3 border-none bg-transparent focus:outline-none" placeholder="0.00">
+                  </div>
+                </div>
+                <p>Balance 12,7859</p>
+              </div>
+              <span class="half-max justift-items-center gap-4 px-4 py-2 w-fit bg-background-content rounded-[40px] absolute top-0 right-1/2 translate-x-1/2">
+                <button class="btn bg-[#ffe3b6]">
+                  half
+                </button>
+                <button class="btn bg-[#ead5f3]">
+                  max
+                </button>
+              </span>
+              <div class="exchange-btn"></div>
+              <div class="you-get"></div>
+              <div class="overview"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shape top-shape">
+        <span></span>
+      </div>
+      <div class="shape side-shapes">
+        <span class=""></span>
+        <span> </span>
+        <span> </span>
+      </div>
+    </div>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
 </html>

@@ -1,1 +1,25 @@
 @import "tailwindcss";
+@theme {
+  --color-background-light: #c3e4e2;
+  --color-background-wrapper: #d9dbdd;
+  --color-background-content: #f2f2f2; 
+}
+@layer components {
+  .btn {
+    border-radius: 40px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+}
+.justift-items-between {
+  @apply flex justify-between items-center
+}
+.justift-items-center {
+  @apply flex justify-center items-center
+}
+.wrapper {
+  @apply  border-4 border-black p-2 rounded-4xl
+}
+.icon-container {
+  @apply rounded-full p-5 cursor-pointer border-[1px]  h-[30px] w-[30px]
+}
